@@ -469,7 +469,9 @@ exec dropbox start
 # insync
 exec insync start
 # volume
-exec pasystray
+#exec pasystray
+#solus
+exec mate-volume-control-applet
 #exec volti
 #exec volumeicon
 #variety
@@ -990,6 +992,7 @@ bindsym $mod+F8 exec nautilus --no-desktop;workspace 8;focus
 
 #exec nemo --no-desktop
 exec nautilus --no-desktop
+exec insync -start
 #exec caja
 #exec thunar
 
@@ -1036,7 +1039,7 @@ exec budgie-polkit-dialog
 #exec pamac-tray
 
 # bluetooth
-exec blueberry-tray
+#exec blueberry-tray
 #exec --no-startup-id blueman-applet
 
 # network
