@@ -34,6 +34,13 @@ echo "Checking presence of lsb-release and install it when missing"
 
 		fi
 
+		# check if eopkg is installed
+		if which eopkg > /dev/null; then
+
+			sudo eopkg -y install lsb-release
+
+		fi
+
 	fi
 
 
@@ -80,7 +87,7 @@ case $DISTRO in
 	
 		;;
 
-	Arch)
+	Arch|arch)
 		echo "################################################################"
 		echo "Installing software for "$DISTRO
 
@@ -101,7 +108,7 @@ case $DISTRO in
 
 		;;
 
-	Solus)
+	Solus|solus)
 		echo "################################################################"
 		echo "Installing software for "$DISTRO
 
