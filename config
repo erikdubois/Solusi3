@@ -1040,7 +1040,7 @@ exec budgie-polkit-dialog
 
 # bluetooth
 #exec blueberry-tray
-#exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 
 # network
 #antergos/linux mint
