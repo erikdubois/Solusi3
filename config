@@ -1040,6 +1040,8 @@ exec budgie-polkit-dialog
 
 # bluetooth
 #exec blueberry-tray
+#sudo rfkill unblock bluetooth
+#sudo systemctl enable rfkill-unblock@all
 exec --no-startup-id blueman-applet
 
 # network
