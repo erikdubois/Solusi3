@@ -45,6 +45,7 @@ if [ -f linux* ]; then
     	exit 0
 fi
 
+
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
